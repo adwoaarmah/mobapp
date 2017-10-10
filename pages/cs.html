@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Computer Science</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="../css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="../css/jquery.mobile.theme.css" />
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="../js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="../js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="../js/lib/jquery.js"></script>
+  <!-- your scripts here -->
+  <script src="../js/app/app.js"></script>
+  <script src="../js/app/bootstrap.js"></script>
+  <script src="../js/lib/jquery.mobile.js"></script>
+
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+<link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+<script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+      
+<style>
+    #navbar{
+        color: black;
+    }
+</style>
+
+  </head>
+    
+    <body>
+    <div>
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+                <div class="background">
+        <img style="padding-left: 25%; padding-top: 10%; padding-bottom: 8%; height: 120px; width: 120px;" src="../images/ashesi.png">
+      </div>
+    </div></li>
+    <li><a href="../newindex.html" class="black-text">Home</a></li>      
+    <li><a href="admin.html" class="black-text">Business Admin</a></li>
+    <li><a href="cs.html" class="black-text">Computer Science</a></li>
+    <li><a href="engineering.html" class="black-text">Engineering</a></li>
+    </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        
+    <nav style="background-color: whitesmoke" id="navbar">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center" style="color: darkred">Ashesi</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!"><i class="material-icons" style="color: darkred">search</i></a></li>
+      </ul>
+    </div>
+    </nav>
+            
+        <div data-role="content" style="padding-left: 15%; padding-right: 15%; padding-bottom: 10%">
+            <h4>Computer Science</h4>
+                <p style="font-size: 17px">Ashesi's Computer Science programme focuses not only on software design and programming, but also on empowering young people to be at the forefront of African growth by harnessing the power of technology. Students in the Computer Science programme are taken through robust foundational courses and projects that prepare them to engage new technologies, and create tech solutions for African needs.</p>
+            
+            <h4>Management Information Systems</h4>
+                <p style="font-size: 17px">In today’s rapidly changing business world, a company’s ability to compete depends on how quickly that enterprise can respond to change. Central to this ability, is the successful use of information, and by extension, the appropriate deployment of information technology.
+
+                The Management Information Systems program at Ashesi University seeks to train graduates, who are able to influence business and organisational strategy through deep understanding of information technology use. This interdisciplinary program trains graduates who are uniquely empowered to enhance the competitiveness of enterprises in the new knowledge economy.</p>
+
+    	</div><!-- /content -->
+
+        
+       <div data-role="footer" style="background-color: black; color: white; position: fixed; left: 0; bottom: 0; width: 100%;">
+    		<h5>©Ashesi University College.</h5>
+            <h5>1 University Avenue, Berekuso;</h5>
+    	</div><!-- /footer -->
+    </div>
+
+<script>
+// Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  $('.collapsible').collapsible();
+</script>
+        
+</body>
+
+</html>
